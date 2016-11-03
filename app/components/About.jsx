@@ -1,36 +1,26 @@
 var React = require('react');
 
-var About = (props) => { // new stateless functional component
+var About = (props) => {
   return (
     <div>
-      <h1 classname="text-center">About</h1>
+      <h1 className="text-center page-title">About</h1>
       <p>
-        React Weather App is the bomb-diggity.
-        Who even says that anymore?  bomb diggity
-        Homie please..
-        Here are some links to check out
+        This is a weather application build on React. I have built this
+        for The Complete React Web App Developer Course.
       </p>
-      <ol>
+      <p>
+        Here are some of the tools I used:
+      </p>
+      <ul>
         <li>
           <a href="https://facebook.github.io/react">React</a> - This was the
-            Javascript framework used.
+            JavaScript framework used.
         </li>
         <li>
-          <a href="https://www.udemy.com/the-complete-react-web-app-developer-course">Andrew Mead's Course on Udemy</a>
+          <a href="http://openweathermap.org">Open Weather Map</a> - I used
+            Open Weather Map to search for weather data by city name.
         </li>
-        <li>
-          <a href="https://github.com/goodvibesjumper/ReactWeather">Github Project Repository</a>
-        </li>
-        <li>
-          <a href="https://www.heroku.com">Heroku</a>
-        </li>
-        <li>
-          <a href="https://foundation.zurb.com">ZURB Foundation</a>
-        </li>
-        <li>
-          <a href="http://openweathermap.org">Open Weather Map</a>
-        </li>
-      </ol>
+      </ul>
     </div>
   )
 };
